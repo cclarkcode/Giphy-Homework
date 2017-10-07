@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fun with Giphy</title>
+
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="container">
+
+		<div class="row">
+		
+			<div class="alert alert-info" role="alert">
+	 			 <h1>Giphy Fun Page </h1>
+			</div>
+
+		</div>
+
+		<!-- Empty div for button placement -->
+		<div class="row buttons" id="buttons"></div>
+
+		<div class="row">
+			
+			<!-- Empty div for GIF placement -->
+			<div class="col-md-8 gifs" id="gifs"></div>
+			
+				
+			<!-- Panel with instructions and button generator -->
+			<div class="col-md-4">
+				<div class="panel panel-default">
+		          <div class="panel-heading">
+		            <h3 class="panel-title">Instructions</h3>
+		          </div>
+		          <div class="panel-body">
+		          	<ol>
+		          		<li>First, choose a genre, or make your own (If you make your own, you'll start with no buttons)</li>
+		          		<li>Use the input box to add buttons to your Giphy page</li>
+		          		<li>Click a button to get a selection of GIFs based on your button</li>
+		          		<li>Click on a GIF to animate it</li>
+		          		<li>You can go back to genre selection by hitting Reset</li>
+
+		          	</ol>
+		          </div>
+		      	</div>
+
+		      	<div class="panel panel-default">
+		          <div class="panel-heading">
+		            <h3 class="panel-title">Add a button</h3>
+		          </div>
+		          <div class="panel-body">
+		          	<form id="animal-form">
+		          		<input type="text" id="input">
+		          		<br>
+		          		<input id="addAnimal" type="submit" value="Submit">
+		          		<input id="reset" type="submit" value="Reset">
+
+		          	</form>
+
+		          </div>
+		      	</div>
+
+			</div> 
+			
+
+
+
+		</div>
+
+	</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="javascript/app.js"></script>
+</body>
+</html>
